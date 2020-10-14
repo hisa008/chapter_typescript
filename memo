@@ -1,0 +1,8 @@
+//コンパイル
+./node_modules/.bin/tsc
+//実行
+node ./src/~.js
+
+let //再宣言禁止
+var //再宣言、再代入可
+const //再宣言、再代入不可
