@@ -16,7 +16,32 @@
 //     b: 12
 // }
 // console.log(a.b)
-var a = {
-    b: 12
-};
-console.log(a.b);
+// const a: {b: number} = {
+//     b: 12
+// }
+// console.log(a.b)
+// let c: {
+//     firstName: string
+//     lastName: string
+// } = {
+//     firstName: 'John',
+//     lastName: 'barrowman'
+// }
+// class Person {
+//     constructor(
+//         public firstName: string,
+//         public lastName: string
+//     ) {}
+// }
+// c = new Person('matt', 'smith')
+// console.log(c)
+// let a: {b: number}
+// // a = {}
+// a = {
+//     b: 1,
+//     c: 2
+// }
+var a;
+a = { b: 1 };
+a = { b: 1, c: 'd' };
+console.log(a.c);
