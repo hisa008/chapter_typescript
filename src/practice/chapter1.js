@@ -129,5 +129,16 @@
 // function(a: string, b: number) {
 //     return a || b
 // }
-var c = ['a'];
-console.log(c);
+// let c: string[] = ['a']
+// let f: ['red']
+// let c: string = 'a'
+// // f.push('blue')
+// console.log(typeof(c))
+var d = [1, 'a'];
+var x = d.map(function (_) {
+    if (typeof _ === 'number') {
+        return _ * 3;
+    }
+    return _.toUpperCase();
+});
+console.log(x);

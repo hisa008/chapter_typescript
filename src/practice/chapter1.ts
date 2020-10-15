@@ -201,6 +201,20 @@
 
 
 
-let c: string[] = ['a']
-let f: ['red']
-f.push('blue')
+// let c: string[] = ['a']
+// let f: ['red']
+// let c: string = 'a'
+// // f.push('blue')
+// console.log(typeof(c))
+
+
+let d = [1, 'a']
+
+let x = d.map(_ => {
+    if (typeof _ === 'number') {
+        return _ * 3
+    }
+    return _.toUpperCase()
+})
+
+console.log(x)
