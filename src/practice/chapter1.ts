@@ -136,14 +136,39 @@
 // type Color = 'blue'
 
 
-type Color = 'red'
-let x = Math.random() < .5
+// type Color = 'red'
+// let x = Math.random() < .5
 
-if (x) {
-    type Color = 'blue'
-    let b: Color = 'blue'
-    console.log(b)
-} else {
-    let c: Color = 'red'
-    console.log(c)
+// if (x) {
+//     type Color = 'blue'
+//     let b: Color = 'blue'
+//     console.log(b)
+// } else {
+//     let c: Color = 'red'
+//     console.log(c)
+// }
+
+
+
+type Cat = {name: string, purrs: boolean}
+type Dog = {name: string, barks: boolean, wags: boolean}
+type CatOrDogOrBoth = Cat | Dog
+type CatAndDog = Cat & Dog
+
+let a: CatOrDogOrBoth = {
+    name: 'Bornkers',
+    purrs: true
+}
+
+a = {
+    name: 'Domino',
+    barks: true,
+    wags: true
+}
+
+a = {
+    name: 'Donkers',
+    barks: true,
+    purrs: true,
+    wags: true
 }
