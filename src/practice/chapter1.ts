@@ -150,25 +150,57 @@
 
 
 
-type Cat = {name: string, purrs: boolean}
-type Dog = {name: string, barks: boolean, wags: boolean}
-type CatOrDogOrBoth = Cat | Dog
-type CatAndDog = Cat & Dog
+// type Cat = {name: string, purrs: boolean}
+// type Dog = {name: string, barks: boolean, wags: boolean}
+// type CatOrDogOrBoth = Cat | Dog
+// type CatAndDog = Cat & Dog
 
-let a: CatOrDogOrBoth = {
-    name: 'Bornkers',
-    purrs: true
-}
+// let a: CatOrDogOrBoth = {
+//     name: 'Bornkers',
+//     purrs: true
+// }
 
-a = {
-    name: 'Domino',
-    barks: true,
-    wags: true
-}
+// a = {
+//     name: 'Domino',
+//     barks: true,
+//     wags: true
+// }
 
-a = {
-    name: 'Donkers',
-    barks: true,
-    purrs: true,
-    wags: true
-}
+// a = {
+//     name: 'Donkers',
+//     barks: true,
+//     purrs: true,
+//     wags: true
+// }
+
+
+// let b: CatAndDog = {
+//     name: 'Domino',
+//     barks: true,
+//     purrs: true,
+//     wags: true
+// }
+
+
+
+
+
+// function trueOrNull(isTrue: boolean) {
+//     if (isTrue) {
+//         return 'true'
+//     }
+//     return null
+// }
+
+// type Returns = string | null
+
+// function(a: string, b: number) {
+//     return a || b
+// }
+
+
+
+
+let c: string[] = ['a']
+let f: ['red']
+f.push('blue')
