@@ -85,19 +85,65 @@
 
 
 
-let airplaneSeaingAssingnments: {
-    [seatNumber: string]: string
-} = {
-    '34D': 'Boris Cherny',
-    '34E': 'bill Gates'
-}
+// let airplaneSeaingAssingnments: {
+//     [seatNumber: string]: string
+// } = {
+//     '34D': 'Boris Cherny',
+//     '34E': 'bill Gates'
+// }
 
-let user: {
-    readonly firstName: string
-} = {
-    firstName: 'abby'
-}
+// let user: {
+//     readonly firstName: string
+// } = {
+//     firstName: 'abby'
+// }
 
-user.firstName
-user.firstName = 
-    'abbey with an e' //error 
+// user.firstName
+// user.firstName = 
+//     'abbey with an e' //error 
+
+
+
+// let danger: {}
+
+// danger = {}
+// console.log(danger)
+// danger = {x: 1}
+// console.log(danger)
+// danger = []
+// console.log(danger)
+// danger = 2
+// console.log(danger)
+
+
+
+// type Age = number
+// type Person = {
+//     name: string
+//     age: Age
+// }
+
+// let age: Age = 55
+
+// let driver: Person = {
+//     name: 'James May',
+//     age: age
+// }
+
+
+
+// type Color = 'red'
+// type Color = 'blue'
+
+
+type Color = 'red'
+let x = Math.random() < .5
+
+if (x) {
+    type Color = 'blue'
+    let b: Color = 'blue'
+    console.log(b)
+} else {
+    let c: Color = 'red'
+    console.log(c)
+}
