@@ -74,35 +74,54 @@
 
 
 
-function a(x: number) {
-    if (x < 10) {
-        return x
-    }
-    return null
-}
-
-function b() {
-    return undefined
-}
-
-function c(){
-    let a = 2 + 2
-    let b = a * a
-}
-
-function e(){
-    throw TypeError('I always error')
-}
-
-// function f(){
-//     while (true) {
-//         doSomething()
+// function a(x: number) {
+//     if (x < 10) {
+//         return x
 //     }
+//     return null
 // }
 
-console.log(a(11))
-console.log(a(5))
-console.log(b)
-console.log(c)
-console.log(e)
+// function b() {
+//     return undefined
+// }
+
+// function c(){
+//     let a = 2 + 2
+//     let b = a * a
+// }
+
+// function e(){
+//     throw TypeError('I always error')
+// }
+
+// // function f(){
+// //     while (true) {
+// //         doSomething()
+// //     }
+// // }
+
+// console.log(a(11))
+// console.log(a(5))
+// console.log(b)
+// console.log(c)
+// console.log(e)
 // console.log(f)
+
+
+
+
+// enum Language {
+//     English,
+//     Spanish,
+//     Russian
+// }
+
+
+enum Language {
+    English = 0,
+    Spanish = 1,
+    Russian = 2
+}
+
+let myFirstLanguage = Language.Russian
+let mySecondLanguage = Language['English']

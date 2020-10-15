@@ -43,30 +43,43 @@
 // type C = Readonly<string[]>
 // type D = readonly [number, string]
 // type E = Readonly<[number, string]>
-function a(x) {
-    if (x < 10) {
-        return x;
-    }
-    return null;
-}
-function b() {
-    return undefined;
-}
-function c() {
-    var a = 2 + 2;
-    var b = a * a;
-}
-function e() {
-    throw TypeError('I always error');
-}
-// function f(){
-//     while (true) {
-//         doSomething()
+// function a(x: number) {
+//     if (x < 10) {
+//         return x
 //     }
+//     return null
 // }
-console.log(a(11));
-console.log(a(5));
-console.log(b);
-console.log(c);
-console.log(e);
+// function b() {
+//     return undefined
+// }
+// function c(){
+//     let a = 2 + 2
+//     let b = a * a
+// }
+// function e(){
+//     throw TypeError('I always error')
+// }
+// // function f(){
+// //     while (true) {
+// //         doSomething()
+// //     }
+// // }
+// console.log(a(11))
+// console.log(a(5))
+// console.log(b)
+// console.log(c)
+// console.log(e)
 // console.log(f)
+// enum Language {
+//     English,
+//     Spanish,
+//     Russian
+// }
+var Language;
+(function (Language) {
+    Language[Language["English"] = 0] = "English";
+    Language[Language["Spanish"] = 1] = "Spanish";
+    Language[Language["Russian"] = 2] = "Russian";
+})(Language || (Language = {}));
+var myFirstLanguage = Language.Russian;
+var mySecondLanguage = Language['English'];
