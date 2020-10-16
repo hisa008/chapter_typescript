@@ -68,5 +68,33 @@
 
 
 
+// function sum(numbers: number[]): number {
+//     return numbers.reduce((total, n) => total + n, 0)
+// }
+
+// console.log(sum([1, 2, 3]))
+
+// function sumVariadic(): number {
+//     return Array
+//         .from(arguments)
+//         .reduce((total, n) => total + n, 0)
+// }
+
+// console.log(sumVariadic(1, 2, 3))
+
+
+
+
+
+// function sumVariadicSafe(...numbers: number[]): number {
+//     return numbers.reduce((total, n) => total + n, 0)
+// }
+
+// console.log(sumVariadicSafe(1, 2, 3, 4, 5))
+
+
+// interface Condole {
+//     log(message?: any, ...optionalParams: any[]): void
+// }
 
 
