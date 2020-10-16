@@ -117,11 +117,72 @@
 // }
 
 
-enum Language {
-    English = 0,
-    Spanish = 1,
-    Russian = 2
+// enum Language {
+//     English = 0,
+//     Spanish = 1,
+//     Russian = 2
+// }
+
+// let myFirstLanguage = Language.Russian
+// let mySecondLanguage = Language['English']
+
+// enum Color {
+//     red,
+//     blue,
+//     green
+// }
+
+// console.log(Color.green)
+
+
+
+// enum Language {
+//     English,
+//     Spanish,
+//     Russian
+// }
+
+// let a = Language.English
+// // let b = Language.Tagalog
+// let c = Language[0]
+// let d = Language[6]
+
+// console.log(c)
+// console.log(d)
+
+
+
+// const enum Flippable {
+//     Burger,
+//     Chair,
+//     Cup,
+//     Skateboard,
+//     Table
+// }
+
+// function flip(f: Flippable) {
+//     return 'flipped it'
+// }
+
+// console.log(flip(Flippable.Chair))
+// console.log(flip(Flippable.Cup))
+// console.log(flip(12))
+
+
+
+const enum Flippable {
+    Burger = 'Burger',
+    Chair = 'Chair',
+    Cup = 'Cup',
+    Skateboard = 'Skateboard',
+    Table = 'Table'
 }
 
-let myFirstLanguage = Language.Russian
-let mySecondLanguage = Language['English']
+function flip(f: Flippable) {
+    return 'flopped it'
+}
+
+console.log(flip(Flippable.Chair))
+console.log(flip(Flippable.Cup))
+// console.log(flip(12))
+// console.log(flip(Flippable.Chair))
