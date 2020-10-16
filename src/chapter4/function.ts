@@ -98,3 +98,68 @@
 // }
 
 
+// function add(a: number, b: number): number {
+//     return a + b
+// }
+
+// console.log(add.apply(null,[10, 20]))
+// console.log(add.call(null, 10, 20))
+// console.log(add.bind(null, 10, 20)())
+
+
+
+
+// let x = {
+//     a() {
+//         return this
+//     }
+// }
+
+// console.log(x.a)
+// console.log(x.a)
+
+
+
+
+// function fancyDate() {
+//     return '${this.getMonth() + 1}/${this.getDate()}/${this.getFullyear()}'
+// }
+
+// console.log(fancyDate.call(new Date))
+
+
+
+
+// function fancyDate(this: Date) {
+//     return '${this.getMonth() + 1}/${this.getDate()}/${this.getFullYear()}'
+// }
+
+// console.log(fancyDate.call(new Date))
+
+
+
+
+// function* createFibonacciGenerator() {
+//     let a = 0
+//     let b = 1
+//     while (true) {
+//         yield a;
+//         [a, b] = [b, a + b]
+//     }
+// }
+
+// let fibonacciGenerator = createFibonacciGenerator()
+// console.log(fibonacciGenerator.next())
+
+
+
+// function* generator(i) {
+//     yield i;
+//     yield i + 10;
+// }
+
+// const gen = generator(10);
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+
