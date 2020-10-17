@@ -124,9 +124,59 @@
 // }
 // log('Hello')
 // log('good', 'abcde')
-function times(f, n) {
-    for (var i = 0; i < n; i++) {
-        f(i);
+// function times(
+//     f: (index: number) => void,
+//     n: number
+// ) {
+//     for (let i = 0; i < n; i++) {
+//         f(i)
+//     }
+// }
+// // times(n => console.log(n), 4)
+// function f(n) {
+//     console.log(n)
+// }
+// times(f, 4)
+// type Log = (message: string, userId?: string) => void
+// type Log = {
+//     (message: string, userId?: string): void
+// }
+// type Reserve = {
+//     (from: Date, to: Date, destination: string): Reservation
+//     (from: Date, destination: string): Reservation
+// }
+// let reserve: Reserve = (
+//     from: Date,
+//     toOrDestination: Date | string,
+//     destination?: string
+// ) => {
+//     //
+// }
+// let reserve: Reserve = (
+//     from: Date,
+//     toOrDestination: Date | string,
+//     destination?: string
+// ) => {
+//     if (toOrDestination instanceof Date && destination !== undefined) {
+//         //宿泊予約
+//     } else if (typeof toOrDestination === 'string') {
+//         //日帰り予約
+//     }
+// }
+function filter(array, f) {
+    var result = [];
+    for (var i = 0; i < array.length; i++) {
+        var item = array[i];
+        if (f(item)) {
+            result.push(item);
+        }
     }
+    return result;
 }
-times(function (n) { return console.log(n); }, 4);
+console.log(filter([1, 2, 3, 4], function (_) { return _ < 4; }));
+// type Filter = {
+//     (array: number[], f: (item: number) => boolean): number[]
+// }
+// let a = 10
+// let ab = 3
+// console.log(a ** ab)
