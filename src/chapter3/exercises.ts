@@ -1,4 +1,4 @@
-let a = 1042 //number
+// let a = 1042 //number
 let b =  'apple and oranges' //string
 const c = 'pineapples' //string
 let d = [true, true, true] //enum
@@ -7,7 +7,7 @@ let f = [1, false] //[number, enum]
 const g = [3] //number[]
 let h = null //null
 
-console.log(typeof(a)) // number
+// console.log(typeof(a)) // number
 console.log(typeof(b)) // string
 console.log(typeof(c)) // 'pineapples'
 console.log(typeof(d)) // boolean[]

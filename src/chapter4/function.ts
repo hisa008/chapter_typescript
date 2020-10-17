@@ -163,3 +163,51 @@
 // console.log(gen.next().value);
 // console.log(gen.next().value);
 
+
+
+// function add(a: number, b: number) {
+//     return a + b
+// }
+
+
+
+
+// function area(radius: number): number | null {
+//     if (radius < 0) {
+//         return null
+//     }
+//     return Math.PI * (radius ** 2)
+// }
+
+// let r: number = 3
+// let a = area(r)
+// if (a !== null) {
+//     console.info('result:', a)
+// }
+
+
+
+
+// // function greet(name: string)
+// type Greet = (name: string) => string
+
+// // function log(message: string, userId?: string)
+// type Log = (message: string, userId?: string) => void
+
+// // function sumVariadicSafe(...numbers: number[]): number
+// type SumVariadicSafe = (...numbers: number[]) => nubmer
+
+
+
+type Log = (message: string, userId?: string) => void
+
+let log: Log = (
+    message,
+    userId = 'Not signed in'
+) => {
+    let time = new Date().toISOString()
+    console.log(time, message, userId)
+}
+
+log('Hello')
+log('good', 'abcde')

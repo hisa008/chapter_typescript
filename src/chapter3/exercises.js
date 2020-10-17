@@ -1,4 +1,4 @@
-var a = 1042; //number
+// let a = 1042 //number
 var b = 'apple and oranges'; //string
 var c = 'pineapples'; //string
 var d = [true, true, true]; //enum
@@ -6,7 +6,7 @@ var e = { type: 'ficus' }; //string
 var f = [1, false]; //[number, enum]
 var g = [3]; //number[]
 var h = null; //null
-console.log(typeof (a)); // number
+// console.log(typeof(a)) // number
 console.log(typeof (b)); // string
 console.log(typeof (c)); // 'pineapples'
 console.log(typeof (d)); // boolean[]
