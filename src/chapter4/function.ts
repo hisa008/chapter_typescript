@@ -199,15 +199,46 @@
 
 
 
-type Log = (message: string, userId?: string) => void
+// type Log = (message: string, userId?: string) => void
 
-let log: Log = (
-    message,
-    userId = 'Not signed in'
-) => {
-    let time = new Date().toISOString()
-    console.log(time, message, userId)
+// let log: Log = (
+//     message,
+//     userId = 'Not signed in'
+// ) => {
+//     let time = new Date().toISOString()
+//     console.log(time, message, userId)
+// }
+
+// log('Hello')
+// log('good', 'abcde')
+
+
+
+
+
+// function times(
+//     f: (index: number) => void,
+//     n: number
+// ) {
+//     for (let i = 0; i < n; i++) {
+//         f(i)
+//     }
+// }
+
+// // times(n => console.log(n), 4)
+
+// function f(n) {
+//     console.log(n)
+// }
+
+// times(f, 4)
+
+
+
+
+
+// type Log = (message: string, userId?: string) => void
+
+type Log = {
+    (message: string, userId?: string): void
 }
-
-log('Hello')
-log('good', 'abcde')
