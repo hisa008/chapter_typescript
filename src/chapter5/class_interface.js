@@ -40,8 +40,53 @@
 //         return distance.rank < 2 && distance.file < 2
 //     }
 // }
-var set = new Set;
-set.add(1).add(2).add(3);
-set.has(2);
-set.has(4);
-console.log(set.has(3));
+// let set = new Set
+// set.add(1).add(2).add(3)
+// set.has(2)
+// set.has(4)
+// console.log(set.has(3))
+// type Sushi = {
+//     calories: number
+//     salty: boolean
+//     tasty: boolean
+// }
+// interface Sushi {
+//     calories: number
+//     salty: boolean
+//     tasty: boolean
+// }
+// type Cake = {
+//     calories: number
+//     salty: boolean
+//     tasty: boolean
+// }
+// type Food = {
+//     calories: number
+//     tasty: boolean
+// }
+// type Sushi = Food & {
+//     salty: boolean
+// }
+// type Cake = Food & {
+//     sweet: boolean
+// }
+// interface Food {
+//     calories: number
+//     tasty: boolean
+// }
+// interface Sushi extends Food {
+//     salty: boolean
+// }
+// interface Cake extends Food {
+//     sweet: boolean
+// }
+// type A = number
+// type B = A | string
+// interface A {
+//     good(x: number): string
+//     bad(c: number): string
+// }
+// interface B extends A {
+//     good(x: string | number): string
+//     bad(x: string): string
+// }
