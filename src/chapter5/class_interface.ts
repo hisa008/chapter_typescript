@@ -34,4 +34,21 @@
 
 
 
-let 
+
+// class Position {
+//     distanceFrom(position: Position) {
+//         return {
+//             rank: Math.abs(position.rank - this.rank),
+//             file: Math.abs(position.file.charCodeAt(0) - this.file.charCodeat(0))
+//         }
+//     }
+// }
+
+// class king extends Piece {
+//     canMobeTo(position: Postion) {
+//         let distance = this.position.distanceFrom(position)
+//         return distance.rank < 2 && distance.file < 2
+//     }
+// }
+
+
