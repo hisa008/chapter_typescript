@@ -163,6 +163,23 @@
 //         //日帰り予約
 //     }
 // }
+// function filter(array, f) {
+//     let result = []
+//     for (let i = 0; i < array.length; i++) {
+//         let item = array[i]
+//         if (f(item)) {
+//             result.push(item)
+//         }
+//     }
+//     return result
+// }
+// console.log(filter([1, 2, 3, 4], _ => _ < 4))
+// type Filter = {
+//     (array: number[], f: (item: number) => boolean): number[]
+// }
+// let a = 10
+// let ab = 3
+// console.log(a ** ab)
 function filter(array, f) {
     var result = [];
     for (var i = 0; i < array.length; i++) {
@@ -174,9 +191,10 @@ function filter(array, f) {
     return result;
 }
 console.log(filter([1, 2, 3, 4], function (_) { return _ < 4; }));
-// type Filter = {
-//     (array: number[], f: (item: number) => boolean): number[]
-// }
-// let a = 10
-// let ab = 3
-// console.log(a ** ab)
+var names = [
+    { firstName: 'beth' },
+    { firstName: 'caitlyn' },
+    { firstName: 'xin' }
+];
+var result = filter(names, function (_) { return _.firstName.startsWith('b'); });
+result[0].firstName;
