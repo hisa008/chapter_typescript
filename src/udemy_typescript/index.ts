@@ -101,7 +101,12 @@
 // console.log(error('helle'));
 
 
-let hello = 'hello';
-hello = hello.toUpperCase();
+// let hello = 'hello';
+// hello = hello.toUpperCase();
 
-console.log(hello);
+// console.log(hello);
+
+
+
+
+

@@ -61,6 +61,6 @@
 //     throw new Error(message);
 // }
 // console.log(error('helle'));
-var hello = 'hello';
-hello = hello.toUpperCase();
-console.log(hello);
+// let hello = 'hello';
+// hello = hello.toUpperCase();
+// console.log(hello);
