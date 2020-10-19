@@ -86,3 +86,22 @@
 // doubleAndHandle(5, doubleNum => {
 //     return doubleNum
 // });
+
+
+// let unknownInput: unknown;
+// let text: any;
+
+// unknownInput = text;
+
+
+// function error(message: string): never {
+//     throw new Error(message);
+// }
+
+// console.log(error('helle'));
+
+
+let hello = 'hello';
+hello = hello.toUpperCase();
+
+console.log(hello);

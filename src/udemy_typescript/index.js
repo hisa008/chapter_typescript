@@ -47,10 +47,20 @@
 // const anotherAdd: (n1: number, n2: number) => number = add;
 // const doubleNumber = number => number * 2
 // console.log(doubleNumber(4))
-function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
-    console.log(doubleNum);
-}
-doubleAndHandle(5, function (doubleNum) {
-    return doubleNum;
-});
+// function doubleAndHandle(num: number, cb: (num1: number) => number): void {
+//     const doubleNum =  cb(num * 2);
+//     console.log(doubleNum);
+// }
+// doubleAndHandle(5, doubleNum => {
+//     return doubleNum
+// });
+// let unknownInput: unknown;
+// let text: any;
+// unknownInput = text;
+// function error(message: string): never {
+//     throw new Error(message);
+// }
+// console.log(error('helle'));
+var hello = 'hello';
+hello = hello.toUpperCase();
+console.log(hello);
