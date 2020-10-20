@@ -94,6 +94,7 @@ var Person = /** @class */ (function () {
     };
     Person.prototype.greeting = function () {
         console.log("hello! My name is " + this.name + ". I am " + this.age + " years old");
+        this.explainjob();
     };
     Person.species = 'Homo sapiens';
     return Person;
@@ -105,10 +106,17 @@ var Teacher = /** @class */ (function (_super) {
         _this.subject = subject;
         return _this;
     }
-    Teacher.prototype.greeting = function () {
-        console.log("hello! My name is " + this.name + ". I am " + this.age + " years old. I teach " + this.subject);
+    Teacher.prototype.explainjob = function () {
+        console.log("I am a teacher and I teach " + this.subject);
+    };
+    Teacher.getInstance = function () {
+        if (Teacher.instance)
+            return Teacher.instance;
+        Teacher.instance = new Teacher('Mike', 36, 'Math');
+        return Teacher.instance;
     };
     return Teacher;
 }(Person));
-console.log(Person.species);
-console.log(Person.isAdult(30));
+var teacher = Teacher.getInstance();
+var teacher2 = Teacher.getInstance();
+console.log(teacher, teacher2);
