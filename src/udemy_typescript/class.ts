@@ -87,40 +87,40 @@
 
 
 
-abstract class Person {
-    static species = 'Homo sapiens';
-    static isAdult(age: number) {
-        if (age > 18) return true;
-        return false;
-    }
-    constructor(public name: string, protected age: number) {
-    }
-    incrementAge() {
-        this.age += 1;
-    }
-    greeting(this: Person) {
-        console.log(`hello! My name is ${this.name}. I am ${this.age} years old`)
-        this.explainjob();
-    }
-    abstract explainjob(): void;
-}
+// abstract class Person {
+//     static species = 'Homo sapiens';
+//     static isAdult(age: number) {
+//         if (age > 18) return true;
+//         return false;
+//     }
+//     constructor(public name: string, protected age: number) {
+//     }
+//     incrementAge() {
+//         this.age += 1;
+//     }
+//     greeting(this: Person) {
+//         console.log(`hello! My name is ${this.name}. I am ${this.age} years old`)
+//         this.explainjob();
+//     }
+//     abstract explainjob(): void;
+// }
 
 
-class Teacher extends Person {
-    private static instance: Teacher;
-    explainjob() {
-        console.log(`I am a teacher and I teach ${this.subject}`);
-    }
-    private constructor(name: string, age: number, private subject: string) {
-        super(name, age);
-    }
-    static getInstance() {
-        if (Teacher.instance) return Teacher.instance;
-        Teacher.instance = new Teacher('Mike', 36, 'Math');
-        return Teacher.instance;
-    }
-}
+// class Teacher extends Person {
+//     private static instance: Teacher;
+//     explainjob() {
+//         console.log(`I am a teacher and I teach ${this.subject}`);
+//     }
+//     private constructor(name: string, age: number, private subject: string) {
+//         super(name, age);
+//     }
+//     static getInstance() {
+//         if (Teacher.instance) return Teacher.instance;
+//         Teacher.instance = new Teacher('Mike', 36, 'Math');
+//         return Teacher.instance;
+//     }
+// }
 
-const teacher = Teacher.getInstance();
-const teacher2 = Teacher.getInstance();
-console.log(teacher, teacher2);
+// const teacher = Teacher.getInstance();
+// const teacher2 = Teacher.getInstance();
+// console.log(teacher, teacher2);
